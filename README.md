@@ -4,6 +4,13 @@
 
 <br>
 
+# 📦 About This Project
+
+This project, **SpamAlert**, is a lightweight tool that detects spam content in text extracted from images. It's powered by OCR (Optical Character Recognition) and a machine learning model trained on real-world email and SMS data.  
+You can test messages captured from physical media (like flyers or spammy screenshots), and the app will extract the text and classify it as **Spam** or **Not Spam**.
+
+<br>
+
 ## 📄 Overview
 
 - Upload an image with text (e.g. flyers, ads, screenshots).
@@ -13,7 +20,6 @@
 | Spam | Ham |
 |-|-|
 | ![image](https://github.com/user-attachments/assets/742b14b8-0b55-497d-9098-05c1722a1cee) | ![image](https://github.com/user-attachments/assets/fc511add-2b18-4e6c-9c60-f2cbd62475da) |
-
 
 <br>
 
@@ -27,6 +33,31 @@
 
 <br>
 
-## 📘 Guide
+## 🧠 Model Training
+The model was trained using a labeled dataset of email and SMS messages. You can find the dataset used for training here:  
 
-See the attached **Project_Documentation.pdf** for a complete explanation of the model, data, and process.
+📊 [spam_ham_dataset.csv](./spam_ham/spam_ham_dataset.csv)  
+
+It contains a mix of spam and legitimate (ham) messages, which were vectorized using TF-IDF and used to train a classification model (stored as `model.pkl`).  
+
+<br>
+
+## 📑 Presentation
+
+A detailed breakdown of the model architecture, data processing pipeline, and performance metrics can be found in the attached PDF:  
+
+🔗 [Email and SMS Spam Detection – Full Report (PDF)](./Email-and-SMS-Spam-Detection.pdf)  
+
+<br>
+
+## 🔧 Components
+
+- **EasyOCR** for extracting text from uploaded images
+- **TF-IDF Vectorizer** to preprocess textual data
+- **Scikit-learn** model trained on real-world messages
+- **Gradio** for a user-friendly browser interface
+
+## 🧪 Try It Out
+
+Launch the app locally and upload an image. It’ll display the extracted text and tell you if the message is spam — right in your browser.
+
