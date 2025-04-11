@@ -33,6 +33,17 @@ You can test messages captured from physical media (like flyers or spammy screen
 
 <br>
 
+## 🖼️ Demo Images
+
+To quickly try out the app, you can use these sample images from the repo:
+
+- ✅ **Ham (Not Spam):** [ham.png](./spam_ham/ham.png)  
+- 🚫 **Spam:** [spam.png](./spam_ham/spam.png)
+
+Download them and upload through the interface to see the predictions in action.
+
+<br>
+
 ## 🧠 Model Training
 The model was trained using a labeled dataset of email and SMS messages. You can find the dataset used for training here:  
 
